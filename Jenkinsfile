@@ -9,7 +9,7 @@ pipeline {
             agent any
             steps {
                 script {
-                    sh "mvn clean package"
+                    bat "mvn clean package"
                 }
             }
         }
@@ -18,7 +18,7 @@ pipeline {
             when { branch 'master' }
             steps {
                 script {
-                    sh "echo 'Not implemented yet'"
+                    bat "echo 'Not implemented yet'"
                 }
             }
         }
